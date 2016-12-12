@@ -1,0 +1,19 @@
+{
+  "name": "m101js",
+  "version": "1.0.0",
+  "description": "MongoDB for Node.js Developers",
+  "main": "app.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "m101"
+  ],
+  "author": "jpnsingh",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.14.5",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.15"
+  }
+}
