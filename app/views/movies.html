@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+</head>
+<body>
+<div>
+    <h1>Movies</h1>
+    <ul>
+        {% for movie in movies %}
+        <li><strong>{{movie.title}}</strong> by {{movie.director}}
+            <small>({{movie.year}})</small>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
