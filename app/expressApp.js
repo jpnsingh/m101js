@@ -2,10 +2,15 @@
     'use strict';
 
     var express = require('express'),
+        engines = require('consolidate'),
         app = express();
 
+    app.engine('html', engines.nunjucks);
+    app.set('view engine', 'html');
+    app.set('views', __dirname + '/views');
+
     app.get('/', function (request, response) {
-        response.send('Hello World from Express App!!');
+        response.render('hello', {name: 'Templates!!'});
     });
 
     app.use(function (request, response) {
